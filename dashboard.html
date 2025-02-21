@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo, <span id="user"></span>!</h1>
+        <button onclick="logout()">Sair</button>
+    </div>
+
+    <script>
+        // Verifica se o usuário está logado
+        const currentUser = localStorage.getItem("currentUser");
+        if (!currentUser) {
+            alert("Você precisa fazer login para acessar esta página.");
+            window.location.href = "login.html"; // Redireciona para login se não estiver logado
+            window.location.href = "cadastro_cliente.html"; // Redireciona para login se não estiver logado
+        } else {
+            document.getElementById("user").innerText = currentUser; // Exibe o nome do usuário
+        }
+
+        function logout() {
+            localStorage.removeItem("currentUser"); // Remove o usuário atual
+            alert("Você saiu da sua conta.");
+            window.location.href = "login.html";
+            window.location.href = "cadastro_medicamentos.html";
+        }
+        // coloquei para navegar
+         function navigateBack() {
+        window.location.href = './cadastro_cliente.html'; 
+        window.location.href = './dashboard.html';   
+         }
+    </script>
+</body>
+</html>

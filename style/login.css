@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    /*background: url('frontend/src/images/natureza.jpg');*/
+    background: url('frontend/src/images/natureza.jpg') no-repeat; 
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Poppins";
+    color: #181608;  
+  }
+  
+  nav {
+    display: flex;
+    justify-content: end;
+  }
+  
+  nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+  }
+  
+  nav li {
+    height: 60px;
+  }
+  nav li:first-child {
+    margin-right: auto;
+  }
+  nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #7011e5;
+  }
+  nav a:hover {
+    color: rgb(97, 227, 170);
+  }
+  
+  .icon {
+    fill: #7031e5;
+  }
+  .logotipo {
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 280;
+    z-index: 999;
+    background-color: rgba(235, 111, 111, 0.2);
+    box-shadow: -10px 0 10px rgba(104, 14, 14, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /*backdrop-filter: blur(10px);*/
+  }
+  
+  @media (max-width: 800px) {
+    .hideMobile {
+      display: none;
+    }
+  }
+  @media (min-width: 800px) {
+    .hideDesktop {
+        display: none;
+      }  
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 30vh;
+    color: rgb(24, 141, 141);
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #4cae4c;
+  }
+  
+  p {
+    text-align: center;
+  }
