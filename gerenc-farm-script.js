@@ -1,3 +1,5 @@
+/* Este código está funcionando perfeitamente (desativei para não gerar conflito) */
+
 document.addEventListener("DOMContentLoaded", () => {
     mostrarRelatorio();
 });

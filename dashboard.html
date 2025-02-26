@@ -18,7 +18,7 @@
         if (!currentUser) {
             alert("Você precisa fazer login para acessar esta página.");
             window.location.href = "login.html"; // Redireciona para login se não estiver logado
-            window.location.href = "cadastro_cliente.html"; // Redireciona para login se não estiver logado
+            window.location.href = "central_medicamentos.html"; // Redireciona para login se não estiver logado
         } else {
             document.getElementById("user").innerText = currentUser; // Exibe o nome do usuário
         }
@@ -31,7 +31,7 @@
         }
         // coloquei para navegar
          function navigateBack() {
-        window.location.href = './cadastro_cliente.html'; 
+        window.location.href = './central_medicamentos.html'; 
         window.location.href = './dashboard.html';   
          }
     </script>

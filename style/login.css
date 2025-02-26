@@ -4,7 +4,7 @@
     padding: 0;
   }
   body {
-    /*background: url('frontend/src/images/natureza.jpg');*/
+    /*background-url: ('frontend/src/images/paisagem.avif');*/
     background: url('frontend/src/images/natureza.jpg') no-repeat; 
     min-height: 100vh;
     background-size: cover;

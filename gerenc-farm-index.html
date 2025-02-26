@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento de Farmácia</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gerenc-farm-style.css">
 </head>
 <body>
     <div class="container">
@@ -22,8 +22,9 @@
         <input type="text" id="busca" placeholder="Buscar medicamento..." oninput="buscarMedicamento()">
         <button onclick="exportarCSV()">Exportar CSV</button>
         <ul id="listaMedicamentos"></ul>
-    </div>
+    </div><br>
+    <button onclick="window.location.href='home.html'">Voltar</button>
 
-    <script src="script.js"></script>
+    <script src="gerenc-farm-script.js"></script>
 </body>
 </html>
