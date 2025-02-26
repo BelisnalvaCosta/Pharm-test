@@ -1,0 +1,5 @@
+id,nome,quantidade,status
+1,"Doril comprimido",24,Disponivel
+2,"Amoxilina comprimido",16,Disponivel
+NULL,doril,1,Critico
+4,"cimegripe liquido 50ml",0,NULL
