@@ -12,7 +12,7 @@ app.use(express.json());
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'o123456J',
+  password: 'sua senha',
   database: 'CentralMedicamentos',
 });
 
